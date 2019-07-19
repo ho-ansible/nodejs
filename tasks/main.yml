@@ -18,8 +18,7 @@
   tags:
     - package
   package:
-    name: nodejs
-    state: latest
+    name: npm
 
 - name: nodejs | update npm
   tags:
