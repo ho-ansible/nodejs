@@ -1,11 +1,11 @@
-# Ansible role: template
-Brief description of role.
+# Ansible role: nodejs
+Node.js application server
 
 ## Requirements
 Only tested on Debian stable, for now.
 
 ## Role Variables
-+ `variable`: description
++ `node_ver`: version to install from nodesource, e.g., `14.x`
 
 ## Playbooks
 + `main.yml`: apply role
