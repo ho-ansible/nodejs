@@ -2,9 +2,9 @@
 # Configure template role
 # Replace 'all' with your own inventory group
 ---
-- name: template | template role
+- name: nodejs | Node.js
   hosts: all
   roles:
-  - role: template
+  - role: nodejs
     tags:
-    - template
+    - node
