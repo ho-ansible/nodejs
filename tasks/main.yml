@@ -14,11 +14,18 @@
     filename: nodejs
     update_cache: yes
 
+- name: nodejs | apt pinning
+  tags:
+    - apt
+  template:
+    src: apt_prefs.j2
+    dest: /etc/apt/preferences.d/60nodesource
+
 - name: nodejs | package
   tags:
     - package
   package:
-    name: npm
+    name: nodejs
 
 - name: nodejs | update npm
   tags:
