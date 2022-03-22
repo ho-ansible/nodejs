@@ -3,7 +3,7 @@
 # Replace 'all' with your own inventory group
 ---
 - name: nodejs | Node.js
-  hosts: all
+  hosts: node
   roles:
   - role: nodejs
     tags:
