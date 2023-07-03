@@ -1,1 +1,2 @@
 ---
+nodejs_keyring: '/etc/apt/trusted.gpg.d/nodejs.asc'
