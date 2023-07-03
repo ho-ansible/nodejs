@@ -20,7 +20,7 @@
     - apt
   template:
     src: apt_prefs.j2
-    dest: /etc/apt/preferences.d/60nodesource
+    dest: "{{ nodejs_apt_prefs }}"
 
 - name: nodejs | package
   tags:

@@ -7,10 +7,13 @@
     name: npm
     state: absent
 
-- name: nodejs | remove repository
+- name: nodejs | remove config files
   tags:
-    - apt
-  apt_repository:
-    repo: "deb https://deb.nodesource.com/node_{{ node_ver }} {{ ansible_distribution_release }} main"
-    filename: nodejs
+  - apt
+  file:
+    path: "{{ item }}"
     state: absent
+  loop:
+  - /etc/apt/sources.list.d/nodejs.list
+  - "{{ nodejs_keyring }}"
+  - "{{ nodejs_apt_prefs }}"

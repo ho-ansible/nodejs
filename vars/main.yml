@@ -1,2 +1,3 @@
 ---
 nodejs_keyring: '/etc/apt/trusted.gpg.d/nodejs.asc'
+nodejs_apt_prefs: /etc/apt/preferences.d/60nodesource
