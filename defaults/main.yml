@@ -1,5 +1,5 @@
 ---
-nodejs_ver: '20.x'
+nodejs_ver: '24.x'
 nodejs_src: 'deb.nodesource.com'
 nodejs_key: "https://{{ nodejs_src }}/gpgkey/nodesource.gpg.key"
 nodejs_repo: "https://{{ nodejs_src }}/node_{{ nodejs_ver }}"
