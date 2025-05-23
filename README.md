@@ -5,7 +5,7 @@ Node.js application server
 Only tested on Debian stable, for now.
 
 ## Role Variables
-+ `nodejs_ver` (default: '20.x'): version to install from nodesource
++ `nodejs_ver` (default: '24.x'): version to install from nodesource
 + `nodejs_src` (default: 'deb.nodesource.com'): mirror to use
 + `nodejs_key`: URL to GPG key for apt repo
 + `nodejs_repo`: URL to apt repo
