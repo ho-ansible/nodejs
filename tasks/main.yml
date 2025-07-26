@@ -11,7 +11,7 @@
   tags:
   - apt
   apt_repository:
-    repo: "deb [signed-by={{ nodejs_keyring }}] {{ nodejs_repo }} {{ ansible_distribution_release }} main"
+    repo: "deb [signed-by={{ nodejs_keyring }}] {{ nodejs_repo }} nodistro main"
     filename: nodejs
     update_cache: yes
 
